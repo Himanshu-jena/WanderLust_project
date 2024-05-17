@@ -1,6 +1,7 @@
 {
   "engines": {
-    "node": "v20.12.2"
+    "node": "v20.12.2",
+    "npm": "10.8.0"
   },
 
   "name": "major_project",
