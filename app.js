@@ -90,8 +90,11 @@ app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
 
+app.get('/', (req, res) => {
+    res.send("Welcome to Wanderlust Project");
+});
 
-app.all("/listings", (req, res, next) => {
+app.all("*", (req, res, next) => {
     next(new ExpressError(404, "Page Not Found"));
 });
 
