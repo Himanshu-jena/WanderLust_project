@@ -91,7 +91,7 @@ app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
 
 app.get('/', (req, res) => {
-    res.send("Welcome to Wanderlust Project");
+    res.redirect('/listings');
 });
 
 app.all("*", (req, res, next) => {
